@@ -1,0 +1,128 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714104508",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "alerts_tb",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "alertId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTemId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertMessage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "alertRetries",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "alertTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "alertPostedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertPostedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertInternalErrorcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rawRequest",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "rawResponse",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "alertFreeField1",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "alertFreeField2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "alertFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AlertsTb",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "alertsTemplateTb",
+      "otherEntityRelationshipName": "alertsTb",
+      "relationshipName": "alertsTemplateTb",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

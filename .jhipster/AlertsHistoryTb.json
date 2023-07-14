@@ -1,0 +1,116 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714104510",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "alerts_history_tb",
+  "fields": [
+    {
+      "fieldName": "historyAlertId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertTemId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertMessage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "historyAlertRetries",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "historyAlertTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "historyAlertPostedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertPostedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertInternalErrorcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertRawRequest",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "historyAlertRawResponse",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "historyAlertFreeField1",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "historyAlertFreeField2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "historyAlertFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "historyAlertFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "historyStatus",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AlertsHistoryTb",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

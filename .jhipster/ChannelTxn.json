@@ -1,0 +1,94 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714104507",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "channel_txn",
+  "fields": [
+    {
+      "fieldName": "accountNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "txnDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narrative",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "txnID",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength"],
+      "fieldValidateRulesMinlength": "2"
+    },
+    {
+      "fieldName": "utilityRef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mNO",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "txnType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "txnStatusMno",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mNTxnID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifiedStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateInserted",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "finalStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "settlementDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestXml",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseXml",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ChannelTxn",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

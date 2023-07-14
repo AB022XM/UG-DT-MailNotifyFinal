@@ -1,0 +1,121 @@
+entity ChannelTxn {
+    accountNo String,
+    txnDate String,
+    Narrative String,
+    amount String,
+    txnID String minlength(2),
+    utilityRef String,
+    transactionID String,
+    mNO String,
+    TxnType String,
+    txnStatusMno String,
+    mNTxnID String,
+    message String,
+    notifiedStatus String,
+    dateInserted String,
+    RecordId String,
+    finalStatus String,
+    settlementDate String,
+    requestXml String,
+    responseXml String
+
+}
+
+
+
+
+
+entity AlertsTb
+{
+    id UUID  unique,
+    alertId String,
+    alertTemId String,
+    alertType String,
+    alertStatus String,
+    alertMessage String,
+    alertDate ZonedDateTime,
+    alertRetries Integer,
+    alertTimestamp ZonedDateTime,
+    alertPostedBy String,
+    alertPostedDate String,
+    alertInternalErrorcode String,
+    rawRequest TextBlob,
+    rawResponse TextBlob,
+    alertFreeField1 TextBlob,
+    alertFreeField2 TextBlob,
+    alertFreeField3 String,
+    alertFreeField4 String,
+    alertFreeField5 String,
+    alertFreeField6 String,
+    alertFreeField7 String,
+    alertFreeField8 String,
+    createdAt ZonedDateTime,
+    updatedAt ZonedDateTime,
+    status String
+
+
+
+
+
+}
+
+entity AlertsTemplateTb{
+    id UUID  ,
+    alertTemplateId String,
+    alertroductId String
+    alertTemplatename String,
+    alertTemplateDetails TextBlob,
+    alertTemplateStatus String,
+    alertTemplateretries Integer,
+    alertTemplateTimestamp ZonedDateTime,
+    alertTemplatepostedby String,
+    alertTemplatepostedDate String,
+    alertTmpFreeField1 TextBlob,
+    alertTmpFreeField2 AnyBlob,
+    alertTmpFreeField3 String,
+    alertTmpFreeField4 String,
+    alertTmpFreeField5 String,
+    alertTmpFreeField6 String,
+    alertTmpFreeField7 String,
+    alertTmpFreeField8 String,
+    timestamp ZonedDateTime,
+    isActive Boolean
+
+
+}
+
+
+
+entity AlertsHistoryTb {
+    historyAlertId UUID  unique,
+    historyAlertId String,
+    historyAlertTemId String,
+    historyAlertType String,
+    historyAlertStatus String,
+    historyAlertMessage String,
+    historyAlertDate ZonedDateTime,
+    historyAlertRetries Integer,
+    historyAlertTimestamp ZonedDateTime,
+    historyAlertPostedBy String,
+    historyAlertPostedDate String,
+    historyAlertInternalErrorcode String,
+    historyAlertRawRequest TextBlob,
+    historyAlertRawResponse TextBlob,
+    historyAlertFreeField1 TextBlob,
+    historyAlertFreeField2 TextBlob,
+    historyAlertFreeField3 String,
+    historyAlertFreeField4 String,
+    historyAlertFreeField5 String,
+    historyAlertFreeField6 String,
+    historyAlertFreeField7 String,
+    historyAlertFreeField8 String,
+    createdAt ZonedDateTime,
+    updatedAt ZonedDateTime,
+    historyStatus String
+
+
+}
+
+relationship OneToMany {
+    AlertsTemplateTb to AlertsTb
+}

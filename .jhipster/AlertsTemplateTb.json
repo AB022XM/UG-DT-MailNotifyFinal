@@ -1,0 +1,106 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714104509",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "alerts_template_tb",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "alertTemplateId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertroductId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTemplatename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTemplateDetails",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "alertTemplateStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTemplateretries",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "alertTemplateTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "alertTemplatepostedby",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTemplatepostedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField1",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "alertTmpFreeField2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "alertTmpFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alertTmpFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AlertsTemplateTb",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "alertsTb",
+      "otherEntityRelationshipName": "alertsTemplateTb",
+      "relationshipName": "alertsTb",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

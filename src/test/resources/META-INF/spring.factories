@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = ug.co.absa.notify.\
+    config.SqlTestContainersSpringContextCustomizerFactory
